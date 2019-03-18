@@ -8,8 +8,10 @@ def sum_array(array):
     return array_sum
 
 def fibonacci(n):
+    if n <= 0:
+        return 0
     if n <= 1:
-        return # Return n if n is less or equal to one:
+        return 1 # Return n if n is less or equal to one:
     else:
         #Return the nth term in a fibonacci sequence if n is greater than one
         return fibonacci(n-1) + fibonacci(n-2)
