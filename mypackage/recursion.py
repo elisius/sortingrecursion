@@ -17,8 +17,8 @@ def fibonacci(n):
         return fibonacci(n-1) + fibonacci(n-2)
 
 def factorial(n):
-    if n == 1:
-        return n # Return n if n is equal to one:
+    if n <= 1:
+        return 1 # Return n if n is equal to one:
     else:
         #Return n! if n is not equal to one
         return n * factorial(n-1)
